@@ -4,10 +4,11 @@ import {
   LinearScale,
   BarElement,
   Title,
+  Tooltip,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 const radius = 12;
 const borderRadius = {
