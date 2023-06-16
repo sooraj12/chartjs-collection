@@ -1,1 +1,1 @@
-export { RadialChart } from "./RadialChart";
+export { RadialGraph } from "./RadialChart";
