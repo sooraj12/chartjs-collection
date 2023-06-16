@@ -5,6 +5,7 @@ import {
   LinearScale,
   PointElement,
   LineElement,
+  Tooltip,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
@@ -12,7 +13,13 @@ import { setBackgroundGradient } from "../../utils";
 
 import "./TimeLineGraph.scss";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Tooltip
+);
 
 // Todo : add tooltip
 // Todo : add background gradient
@@ -39,9 +46,6 @@ function TimeLineGraph({ labels, data }) {
             },
           },
           plugins: {
-            tooltip: {
-              enabled: false,
-            },
             legend: {
               display: false,
             },
