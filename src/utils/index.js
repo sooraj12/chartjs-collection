@@ -1,0 +1,1 @@
+export { setBackgroundGradient } from "./setBackgroundGradient";
