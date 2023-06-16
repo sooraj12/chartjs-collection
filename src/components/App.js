@@ -1,5 +1,6 @@
 // import { DoughnutChart } from "./DoughnutChart";
-import { RadialGraph } from "./RadialChart";
+// import { RadialGraph } from "./RadialChart";
+import { StackedBar } from "./StackedBar";
 // import { TimeLineGraph } from "./TimeLineGraph";
 
 // Todo : add grid layout for graphs
@@ -26,7 +27,7 @@ function App() {
           "24 Apr",
         ]}
       /> */}
-      <RadialGraph
+      {/* <RadialGraph
         data={[
           {
             score: 683.8,
@@ -69,7 +70,8 @@ function App() {
         ]}
         maxScores={[100, 100, 100, 100, 100, 100]}
         percentile={[78.485, 68.438, 78.438, 78.485, 100, 94.737]}
-      />
+      /> */}
+      <StackedBar />
     </div>
   );
 }
