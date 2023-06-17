@@ -1,13 +1,10 @@
 import { useMemo } from "react";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Doughnut } from "react-chartjs-2";
 
 import { chartData } from "./chartData";
 
 import "./DoughnutChart.scss";
-
-ChartJS.register(ArcElement, Tooltip, Legend);
 
 function DoughnutChart({ chartType, showDataLabels = true }) {
   const totalCount = useMemo(() => {

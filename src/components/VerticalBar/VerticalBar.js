@@ -1,20 +1,4 @@
 import { Bar } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Tooltip,
-} from "chart.js";
-import ChartAnnotations from "chartjs-plugin-annotation";
-
-ChartJS.register(
-  ChartAnnotations,
-  LinearScale,
-  CategoryScale,
-  BarElement,
-  Tooltip
-);
 
 const chartData = {
   threshold: 30,

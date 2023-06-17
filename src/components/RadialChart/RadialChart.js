@@ -1,18 +1,8 @@
 import React from "react";
-import {
-  Chart as ChartJS,
-  RadialLinearScale,
-  PointElement,
-  LineElement,
-  Filler,
-  Tooltip,
-} from "chart.js";
 import { Radar } from "react-chartjs-2";
 import { toFont } from "chart.js/helpers";
 
 import "./RadialGraph.scss";
-
-ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip);
 
 function RadialGraph({ labels, maxScores, percentile, data }) {
   return (

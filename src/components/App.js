@@ -1,22 +1,52 @@
-// import { DoughnutChart } from "./DoughnutChart";
-// import { RadialGraph } from "./RadialChart";
-// import { StackedBar } from "./StackedBar";
-// import { TimeLineGraph } from "./TimeLineGraph";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  PointElement,
+  LineElement,
+  Filler,
+  RadialLinearScale,
+} from "chart.js";
+import ChartAnnotations from "chartjs-plugin-annotation";
 
-// import { PieChart } from "./PieChart";
-// import { HorizontalBar } from "./HorizontalBar";
-// import { VerticalBar } from "./VerticalBar";
+import { DoughnutChart } from "./DoughnutChart";
+import { RadialGraph } from "./RadialChart";
+import { StackedBar } from "./StackedBar";
+import { TimeLineGraph } from "./TimeLineGraph";
+
+import { PieChart } from "./PieChart";
+import { HorizontalBar } from "./HorizontalBar";
+import { VerticalBar } from "./VerticalBar";
 import { LineGraph } from "./LineGraph";
 
 // Todo : add grid layout for graphs
 // Todo : add scss variables
-// Todo : create single chart instance and use options to hide legend, title etc...
+
+ChartJS.register(
+  ArcElement,
+  Tooltip,
+  Legend,
+  LinearScale,
+  CategoryScale,
+  BarElement,
+  Title,
+  PointElement,
+  LineElement,
+  Filler,
+  RadialLinearScale,
+  ChartAnnotations
+);
 
 function App() {
   return (
     <div className="App">
-      {/* <DoughnutChart chartType="UI Developers" showDataLabels={false} /> */}
-      {/* <TimeLineGraph
+      <DoughnutChart chartType="UI Developers" showDataLabels={false} />
+      <TimeLineGraph
         data={[468, 470, 552, 565, 576, 647, 655, 670, 670, 682, 683, 684]}
         labels={[
           "24 Oct",
@@ -32,8 +62,8 @@ function App() {
           "27 Mar",
           "24 Apr",
         ]}
-      /> */}
-      {/* <RadialGraph
+      />
+      <RadialGraph
         data={[
           {
             score: 683.8,
@@ -76,11 +106,11 @@ function App() {
         ]}
         maxScores={[100, 100, 100, 100, 100, 100]}
         percentile={[78.485, 68.438, 78.438, 78.485, 100, 94.737]}
-      /> */}
-      {/* <StackedBar /> */}
-      {/* <PieChart /> */}
-      {/* <HorizontalBar /> */}
-      {/* <VerticalBar /> */}
+      />
+      <StackedBar />
+      <PieChart />
+      <HorizontalBar />
+      <VerticalBar />
       <LineGraph />
     </div>
   );
