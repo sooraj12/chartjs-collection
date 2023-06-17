@@ -21,7 +21,6 @@ ChartJS.register(
   Tooltip
 );
 
-// Todo : add tooltip
 // Todo : add background gradient
 
 function TimeLineGraph({ labels, data }) {

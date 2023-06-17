@@ -1,7 +1,9 @@
 // import { DoughnutChart } from "./DoughnutChart";
 // import { RadialGraph } from "./RadialChart";
-import { StackedBar } from "./StackedBar";
+// import { StackedBar } from "./StackedBar";
 // import { TimeLineGraph } from "./TimeLineGraph";
+
+import { PieChart } from "./PieChart";
 
 // Todo : add grid layout for graphs
 // Todo : add scss variables
@@ -71,7 +73,8 @@ function App() {
         maxScores={[100, 100, 100, 100, 100, 100]}
         percentile={[78.485, 68.438, 78.438, 78.485, 100, 94.737]}
       /> */}
-      <StackedBar />
+      {/* <StackedBar /> */}
+      <PieChart />
     </div>
   );
 }
