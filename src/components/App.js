@@ -5,7 +5,8 @@
 
 // import { PieChart } from "./PieChart";
 // import { HorizontalBar } from "./HorizontalBar";
-import { VerticalBar } from "./VerticalBar";
+// import { VerticalBar } from "./VerticalBar";
+import { LineGraph } from "./LineGraph";
 
 // Todo : add grid layout for graphs
 // Todo : add scss variables
@@ -79,7 +80,8 @@ function App() {
       {/* <StackedBar /> */}
       {/* <PieChart /> */}
       {/* <HorizontalBar /> */}
-      <VerticalBar />
+      {/* <VerticalBar /> */}
+      <LineGraph />
     </div>
   );
 }
