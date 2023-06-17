@@ -1,0 +1,13 @@
+.Box {
+  display: block;
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .Box__title {
+    margin-bottom: 20px;
+  }
+}

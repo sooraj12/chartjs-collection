@@ -26,7 +26,7 @@ const chartData = {
   ],
 };
 
-function VerticalBar() {
+function VerticalBar({ width, height }) {
   const getBackgroundColor = (val) => {
     if (val > chartData.threshold) return "#00bf9c";
     return "#ed6362";
@@ -42,8 +42,8 @@ function VerticalBar() {
     <div
       className="VerticalBar"
       style={{
-        width: "500px",
-        height: "400px",
+        width,
+        height,
       }}
     >
       <Bar

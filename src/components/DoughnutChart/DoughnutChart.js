@@ -6,7 +6,7 @@ import { chartData } from "./chartData";
 
 import "./DoughnutChart.scss";
 
-function DoughnutChart({ chartType, showDataLabels = true }) {
+function DoughnutChart({ chartType, showDataLabels = true, width, height }) {
   const totalCount = useMemo(() => {
     return chartData.reduce((acc, cur) => {
       return acc + cur.total;
@@ -20,7 +20,13 @@ function DoughnutChart({ chartType, showDataLabels = true }) {
   };
 
   return (
-    <div className="DoughnutChart">
+    <div
+      className="DoughnutChart"
+      style={{
+        width,
+        height,
+      }}
+    >
       <Doughnut
         plugins={[
           ChartDataLabels,

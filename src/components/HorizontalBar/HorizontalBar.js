@@ -40,7 +40,7 @@ const chartData = [
   },
 ];
 
-function HorizontalBar() {
+function HorizontalBar({ width, height }) {
   const getTooltipTitle = (dataSetLabel) => {
     if (dataSetLabel === "dataset1") {
       return "Current";
@@ -53,7 +53,8 @@ function HorizontalBar() {
     <div
       className="HorizontalBar"
       style={{
-        width: "600px",
+        width,
+        height,
       }}
     >
       <Bar

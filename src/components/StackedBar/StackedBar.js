@@ -8,13 +8,13 @@ const borderRadius = {
   bottomRight: radius,
 };
 
-function StackedBar() {
+function StackedBar({ width, height }) {
   return (
     <div
       className="StackedBar"
       style={{
-        width: "600px",
-        height: "400px",
+        width,
+        height,
       }}
     >
       <Bar

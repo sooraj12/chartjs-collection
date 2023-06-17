@@ -40,7 +40,7 @@ const chartData = [
   },
 ];
 
-function PieChart() {
+function PieChart({ width, height }) {
   const total = chartData.reduce((sum, item) => {
     return sum + item.value;
   }, 0);
@@ -56,8 +56,8 @@ function PieChart() {
     <div
       className="PieChart"
       style={{
-        width: "400px",
-        height: "500px",
+        width,
+        height,
       }}
     >
       <Pie

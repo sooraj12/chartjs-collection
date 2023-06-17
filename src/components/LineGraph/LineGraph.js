@@ -1,10 +1,7 @@
 import { Line } from "react-chartjs-2";
 import { setBackgroundGradient } from "../../utils";
 
-// todo : fill
-// todo : checkbox to hide line
-
-function LineGraph() {
+function LineGraph({ width, height }) {
   const xLabel = "Month";
   const yLabel = "No of Users";
 
@@ -51,9 +48,7 @@ function LineGraph() {
         usePointStyle: false,
         backgroundColor: "rgba(255, 255, 255, 0.9)",
         callbacks: {
-          title: function ([context]) {
-            console.log(context);
-          },
+          title: function ([context]) {},
           label: function (context) {
             let label = "";
             if (context.parsed.y !== null) {
@@ -126,8 +121,8 @@ function LineGraph() {
   return (
     <div
       style={{
-        width: "800px",
-        height: "400px",
+        width,
+        height,
       }}
     >
       <Line

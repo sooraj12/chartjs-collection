@@ -5,12 +5,34 @@ import { setBackgroundGradient } from "../../utils";
 
 import "./TimeLineGraph.scss";
 
-function TimeLineGraph({ labels, data }) {
+const data = [468, 470, 552, 565, 576, 647, 655, 670, 670, 682, 683, 684];
+const labels = [
+  "24 Oct",
+  "21 Nov",
+  "28 Nov",
+  "12 Dec",
+  "19 Dec",
+  "26 Dec",
+  "16 Jan",
+  "30 Jan",
+  "27 Feb",
+  "13 Mar",
+  "27 Mar",
+  "24 Apr",
+];
+
+function TimeLineGraph({ width, height }) {
   const chartRef = useRef();
   const gradient = chartRef.current?.ctx.createLinearGradient(0, 0, 0, 100);
 
   return (
-    <div className="TimeLineGraph">
+    <div
+      className="TimeLineGraph"
+      style={{
+        width,
+        height,
+      }}
+    >
       <Line
         ref={chartRef}
         options={{

@@ -1,170 +1,43 @@
 export const chartData = [
   {
-    id: 108,
-    label: "HTML",
-    color: "hsl(1, 86%, 60%)",
-    total: 20,
-  },
-  {
-    id: 119,
-    label: "CSS",
-    color: "hsl(1, 86%, 70%)",
-    total: 20,
-  },
-  {
     id: 2,
     label: "JavaScript",
     color: "hsl(1, 86%, 80%)",
-    total: 20,
+    total: 90,
   },
-  {
-    id: 69,
-    label: "Angular JS",
-    color: "hsl(1, 86%, 90%)",
-    total: 20,
-  },
+
   {
     id: 58,
     label: "React JS",
-    color: "hsl(31, 93%, 50%)",
-    total: 20,
-  },
-  {
-    id: 126,
-    label: "Vue JS",
     color: "hsl(31, 93%, 60%)",
-    total: 20,
+    total: 120,
   },
-  {
-    id: 64,
-    label: "Dev Manage",
-    color: "hsl(31, 93%, 70%)",
-    total: 20,
-  },
-  {
-    id: 123,
-    label: "Execution",
-    color: "hsl(31, 93%, 80%)",
-    total: 30,
-  },
-  {
-    id: 73,
-    label: "TypeScript",
-    color: "hsl(31, 93%, 90%)",
-    total: 20,
-  },
-  {
-    id: 1,
-    label: "Bootstrap",
-    color: "hsl(43, 96%, 50%)",
-    total: 34,
-  },
+
   {
     id: 62,
     label: "Material Ui",
     color: "hsl(43, 96%, 60%)",
     total: 21,
   },
-  {
-    id: 63,
-    label: "Figma",
-    color: "hsl(43, 96%, 70%)",
-    total: 20,
-  },
-  {
-    id: 61,
-    label: "Swagger",
-    color: "hsl(43, 96%, 80%)",
-    total: 20,
-  },
-  {
-    id: 3,
-    label: "Ionic",
-    color: "hsl(43, 96%, 90%)",
-    total: 20,
-  },
-  {
-    id: 4,
-    label: "React Native",
-    color: "hsl(60, 63%, 50%)",
-    total: 21,
-  },
+
   {
     id: 71,
     label: "Flutter",
     color: "hsl(60, 63%, 60%)",
-    total: 21,
+    total: 75,
   },
-  {
-    id: 114,
-    label: "Foundation",
-    color: "hsl(60, 63%, 70%)",
-    total: 21,
-  },
-  {
-    id: 60,
-    label: "Illustration",
-    color: "hsl(60, 63%, 80%)",
-    total: 30,
-  },
-  {
-    id: 127,
-    label: "Photoshop",
-    color: "hsl(60, 63%, 90%)",
-    total: 20,
-  },
-  {
-    id: 99,
-    label: "Wireframe",
-    color: "hsl(185, 100%, 50%)",
-    total: 21,
-  },
+
   {
     id: 117,
-    label: "Sketching",
+    label: "Vue JS",
     color: "hsl(185, 100%, 60%)",
-    total: 21,
+    total: 31,
   },
-  {
-    id: 122,
-    label: "Custom",
-    color: "hsl(185, 100%, 70%)",
-    total: 20,
-  },
-  {
-    id: 124,
-    label: "Sencha",
-    color: "hsl(185, 100%, 80%)",
-    total: 21,
-  },
-  {
-    id: 100,
-    label: "Sass",
-    color: "hsl(185, 100%, 90%)",
-    total: 21,
-  },
-  {
-    id: 98,
-    label: "Wbpack",
-    color: "hsl(212, 80%, 50%)",
-    total: 21,
-  },
+
   {
     id: 128,
-    label: "Babel",
+    label: "Angular JS",
     color: "hsl(212, 80%, 60%)",
-    total: 21,
-  },
-  {
-    id: 131,
-    label: "Redux",
-    color: "hsl(212, 80%, 70%)",
-    total: 20,
-  },
-  {
-    id: 130,
-    label: "Design Patters",
-    color: "hsl(212, 80%, 80%)",
-    total: 20,
+    total: 51,
   },
 ];

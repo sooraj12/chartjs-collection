@@ -4,9 +4,58 @@ import { toFont } from "chart.js/helpers";
 
 import "./RadialGraph.scss";
 
-function RadialGraph({ labels, maxScores, percentile, data }) {
+const data = [
+  {
+    score: 683.8,
+    percentile: 78.485,
+    max_score: 996.13,
+  },
+  {
+    score: 664.66,
+    percentile: 68.438,
+    max_score: 998.25,
+  },
+  {
+    score: 625.27,
+    percentile: 68.438,
+    max_score: 998.26,
+  },
+  {
+    score: 621.18,
+    percentile: 78.485,
+    max_score: 998.27,
+  },
+  {
+    score: 465.26,
+    percentile: 100,
+    max_score: 465.26,
+  },
+  {
+    score: 463.68,
+    percentile: 94.737,
+    max_score: 466.96,
+  },
+];
+const labels = [
+  ["HTML"],
+  ["CSS"],
+  ["JavaScript"],
+  ["Angulsr JS"],
+  ["React JS"],
+  ["Vue JS"],
+];
+const maxScores = [100, 100, 100, 100, 100, 100];
+const percentile = [78.485, 68.438, 78.438, 78.485, 100, 94.737];
+
+function RadialGraph({ width, height }) {
   return (
-    <div className="RadialGraph">
+    <div
+      className="RadialGraph"
+      style={{
+        width,
+        height,
+      }}
+    >
       <Radar
         data={{
           labels: labels,

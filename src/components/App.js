@@ -23,9 +23,7 @@ import { PieChart } from "./PieChart";
 import { HorizontalBar } from "./HorizontalBar";
 import { VerticalBar } from "./VerticalBar";
 import { LineGraph } from "./LineGraph";
-
-// Todo : add grid layout for graphs
-// Todo : add scss variables
+import { Layout } from "./Layout";
 
 ChartJS.register(
   ArcElement,
@@ -43,75 +41,75 @@ ChartJS.register(
 );
 
 function App() {
+  const charts = [
+    {
+      title: "Doughnut Chart",
+      component: DoughnutChart,
+      props: {
+        chartType: "UI Developer",
+        showDataLabels: true,
+        width: "250px",
+        height: "250px",
+      },
+    },
+    {
+      title: "Timeline Chart",
+      component: TimeLineGraph,
+      props: {
+        width: "600px",
+        height: "300px",
+      },
+    },
+    {
+      title: "Pie Chart",
+      component: PieChart,
+      props: {
+        width: "400px",
+        height: "400px",
+      },
+    },
+    {
+      title: "Line Chart",
+      component: LineGraph,
+      props: {
+        width: "650px",
+        height: "350px",
+      },
+    },
+    {
+      title: "Vertical Bar Chart",
+      component: VerticalBar,
+      props: {
+        width: "300px",
+        height: "300px",
+      },
+    },
+    {
+      title: "Stacked Bar Chart",
+      component: StackedBar,
+      props: {
+        width: "450px",
+        // height: "300px",
+      },
+    },
+    {
+      title: "Radial Chart",
+      component: RadialGraph,
+      props: {
+        width: "450px",
+      },
+    },
+    {
+      title: "Horizontal Bar Chart",
+      component: HorizontalBar,
+      props: {
+        width: "550px",
+      },
+    },
+  ];
   return (
     <div className="App">
-      <DoughnutChart chartType="UI Developers" showDataLabels={false} />
-      <TimeLineGraph
-        data={[468, 470, 552, 565, 576, 647, 655, 670, 670, 682, 683, 684]}
-        labels={[
-          "24 Oct",
-          "21 Nov",
-          "28 Nov",
-          "12 Dec",
-          "19 Dec",
-          "26 Dec",
-          "16 Jan",
-          "30 Jan",
-          "27 Feb",
-          "13 Mar",
-          "27 Mar",
-          "24 Apr",
-        ]}
-      />
-      <RadialGraph
-        data={[
-          {
-            score: 683.8,
-            percentile: 78.485,
-            max_score: 996.13,
-          },
-          {
-            score: 664.66,
-            percentile: 68.438,
-            max_score: 998.25,
-          },
-          {
-            score: 625.27,
-            percentile: 68.438,
-            max_score: 998.26,
-          },
-          {
-            score: 621.18,
-            percentile: 78.485,
-            max_score: 998.27,
-          },
-          {
-            score: 465.26,
-            percentile: 100,
-            max_score: 465.26,
-          },
-          {
-            score: 463.68,
-            percentile: 94.737,
-            max_score: 466.96,
-          },
-        ]}
-        labels={[
-          ["HTML"],
-          ["CSS"],
-          ["JavaScript"],
-          ["Angulsr JS"],
-          ["React JS"],
-          ["Vue JS"],
-        ]}
-        maxScores={[100, 100, 100, 100, 100, 100]}
-        percentile={[78.485, 68.438, 78.438, 78.485, 100, 94.737]}
-      />
-      <StackedBar />
-      <PieChart />
-      <HorizontalBar />
-      <VerticalBar />
-      <LineGraph />
+      <Layout charts={charts} />
     </div>
   );
 }
