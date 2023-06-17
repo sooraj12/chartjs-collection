@@ -4,7 +4,8 @@
 // import { TimeLineGraph } from "./TimeLineGraph";
 
 // import { PieChart } from "./PieChart";
-import { HorizontalBar } from "./HorizontalBar";
+// import { HorizontalBar } from "./HorizontalBar";
+import { VerticalBar } from "./VerticalBar";
 
 // Todo : add grid layout for graphs
 // Todo : add scss variables
@@ -77,7 +78,8 @@ function App() {
       /> */}
       {/* <StackedBar /> */}
       {/* <PieChart /> */}
-      <HorizontalBar />
+      {/* <HorizontalBar /> */}
+      <VerticalBar />
     </div>
   );
 }
