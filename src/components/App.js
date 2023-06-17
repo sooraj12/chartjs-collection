@@ -3,10 +3,12 @@
 // import { StackedBar } from "./StackedBar";
 // import { TimeLineGraph } from "./TimeLineGraph";
 
-import { PieChart } from "./PieChart";
+// import { PieChart } from "./PieChart";
+import { HorizontalBar } from "./HorizontalBar";
 
 // Todo : add grid layout for graphs
 // Todo : add scss variables
+// Todo : create single chart instance and use options to hide legend, title etc...
 
 function App() {
   return (
@@ -74,7 +76,8 @@ function App() {
         percentile={[78.485, 68.438, 78.438, 78.485, 100, 94.737]}
       /> */}
       {/* <StackedBar /> */}
-      <PieChart />
+      {/* <PieChart /> */}
+      <HorizontalBar />
     </div>
   );
 }
